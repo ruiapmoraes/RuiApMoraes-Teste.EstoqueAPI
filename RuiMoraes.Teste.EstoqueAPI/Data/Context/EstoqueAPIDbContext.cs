@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RuiMoraes.Teste.EstoqueAPI.Data.EntitiesConfigurations;
 using RuiMoraes.Teste.EstoqueAPI.Domains;
 
 namespace RuiMoraes.Teste.EstoqueAPI.Data.Context
@@ -10,14 +11,16 @@ namespace RuiMoraes.Teste.EstoqueAPI.Data.Context
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.ApplyConfiguration(new CategoriaConfiguration());
+            builder.ApplyConfiguration(new ProdutoConfiguration());            
+            builder.ApplyConfigurationsFromAssembly(typeof(EstoqueAPIDbContext).Assembly);
+        }
 
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Produto> Produtos { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);            
-            builder.ApplyConfigurationsFromAssembly(typeof(EstoqueAPIDbContext).Assembly);
-        }
     }
 }
