@@ -13,11 +13,7 @@ namespace RuiMoraes.Teste.EstoqueAPI.Data.EntitiesConfigurations
             builder.Property(p => p.Nome).HasMaxLength(30).IsRequired();
             builder.Property(p => p.Descricao).HasMaxLength(100);
 
-            builder.HasData(
-              new Categoria(1, "Informática", "", EnumSituacao.Ativo),
-              new Categoria(2, "Escritório", "", EnumSituacao.Ativo),
-               new Categoria(3, "Games", "", EnumSituacao.Ativo)
-            );
+           
         }
     }
 }

@@ -16,11 +16,12 @@ namespace RuiMoraes.Teste.EstoqueAPI.Domains
             Descricao = descricao;
             Situacao = situacao;
             DataCriacao = DateTime.Now;
+            Produtos = new List<Produto>();
         }
 
         public string Nome { get; set; }
         public string Descricao { get; set; }
 
-        public ICollection<Produto> Produtos { get; set; }
+        public ICollection<Produto>? Produtos { get; set; }
     }
 }
