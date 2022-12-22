@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiMoraes.Teste.EstoqueAPI", "RuiMoraes.Teste.EstoqueAPI\RuiMoraes.Teste.EstoqueAPI.csproj", "{CCD5AB70-D719-48F9-B9D8-24037B924F34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuiMoraes.Teste.EstoqueAPI", "RuiMoraes.Teste.EstoqueAPI\RuiMoraes.Teste.EstoqueAPI.csproj", "{CCD5AB70-D719-48F9-B9D8-24037B924F34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "util", "util", "{8DB5803A-84E4-42E8-9F30-46B94E750EE1}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\rui-m\OneDrive\Desktop\ruimoraes_teste_script.sql = C:\Users\rui-m\OneDrive\Desktop\ruimoraes_teste_script.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
