@@ -20,12 +20,12 @@ namespace RuiMoraes.Teste.EstoqueAPI.Services
 
         public IEnumerable<ProdutoDTO> BuscarTodos()
         {
-            var produtoEntities = _produtoRepository.BuscaTodos();
+            var produtoEntities = _produtoRepository.BuscarProdutos();
             return _mapper.Map<IEnumerable<ProdutoDTO>>(produtoEntities);
         }
         public ProdutoDTO BuscarPorId(int? id)
         {
-            var produtoEntity = _produtoRepository.BuscaPorId(id);
+            var produtoEntity = _produtoRepository.BuscarProdutoPorId(id);
             return _mapper.Map<ProdutoDTO>(produtoEntity);
 
         }

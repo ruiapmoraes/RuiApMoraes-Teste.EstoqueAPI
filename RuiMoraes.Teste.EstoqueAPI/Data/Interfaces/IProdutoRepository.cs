@@ -4,5 +4,7 @@ namespace RuiMoraes.Teste.EstoqueAPI.Data.Interfaces
 {
     public interface IProdutoRepository : IGenericRepository<Produto>
     {
+        IEnumerable<Produto> BuscarProdutos();
+        Produto BuscarProdutoPorId(int? id);
     }
 }

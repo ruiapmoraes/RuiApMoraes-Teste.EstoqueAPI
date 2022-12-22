@@ -1,6 +1,7 @@
 ﻿using RuiMoraes.Teste.EstoqueAPI.Domains;
 using RuiMoraes.Teste.EstoqueAPI.Domains.Enum;
 using System.ComponentModel;
+using System.Text.Json.Serialization;
 
 namespace RuiMoraes.Teste.EstoqueAPI.DTOs
 {
@@ -14,9 +15,9 @@ namespace RuiMoraes.Teste.EstoqueAPI.DTOs
         public DateTime? DataCriacao { get; set; }
         public EnumSituacao Situacao { get; set; }
 
-        public int CategoriaId { get; set; }
-
         [DisplayName("Categorias")]
-        public Categoria Categoria { get; set; }
+        public int CategoriaId { get; set; }
+        [JsonIgnore]
+        public Categoria? Categoria { get; set; }
     }
 }
