@@ -12,7 +12,7 @@ using RuiMoraes.Teste.EstoqueAPI.Data.Context;
 namespace RuiMoraes.Teste.EstoqueAPI.Migrations
 {
     [DbContext(typeof(EstoqueAPIDbContext))]
-    [Migration("20221221120145_Initial")]
+    [Migration("20221221121701_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
