@@ -1,6 +1,8 @@
-﻿namespace RuiMoraes.Teste.EstoqueAPI.Data.Interfaces
+﻿using RuiMoraes.Teste.EstoqueAPI.Domains;
+
+namespace RuiMoraes.Teste.EstoqueAPI.Data.Interfaces
 {
-    public interface ICategoriaRepository
+    public interface ICategoriaRepository : IGenericRepository<Categoria>
     {
     }
 }
