@@ -12,7 +12,7 @@ using RuiMoraes.Teste.EstoqueAPI.Data.Context;
 namespace RuiMoraes.Teste.EstoqueAPI.Migrations
 {
     [DbContext(typeof(EstoqueAPIDbContext))]
-    [Migration("20221221121701_Initial")]
+    [Migration("20221222040217_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -28,10 +28,7 @@ namespace RuiMoraes.Teste.EstoqueAPI.Migrations
             modelBuilder.Entity("RuiMoraes.Teste.EstoqueAPI.Domains.Categoria", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("DataCriacao")
                         .HasColumnType("datetime2");
@@ -57,10 +54,7 @@ namespace RuiMoraes.Teste.EstoqueAPI.Migrations
             modelBuilder.Entity("RuiMoraes.Teste.EstoqueAPI.Domains.Produto", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CategoriaId")
                         .HasColumnType("int");

@@ -25,10 +25,7 @@ namespace RuiMoraes.Teste.EstoqueAPI.Migrations
             modelBuilder.Entity("RuiMoraes.Teste.EstoqueAPI.Domains.Categoria", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("DataCriacao")
                         .HasColumnType("datetime2");
@@ -54,10 +51,7 @@ namespace RuiMoraes.Teste.EstoqueAPI.Migrations
             modelBuilder.Entity("RuiMoraes.Teste.EstoqueAPI.Domains.Produto", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CategoriaId")
                         .HasColumnType("int");

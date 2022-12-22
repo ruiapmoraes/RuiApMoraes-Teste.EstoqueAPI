@@ -12,8 +12,6 @@ namespace RuiMoraes.Teste.EstoqueAPI.Data.EntitiesConfigurations
             builder.HasKey(t => t.Id);
             builder.Property(p => p.Nome).HasMaxLength(30).IsRequired();
             builder.Property(p => p.Descricao).HasMaxLength(100);
-
-           
         }
     }
 }

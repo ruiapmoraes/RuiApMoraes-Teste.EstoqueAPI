@@ -4,22 +4,22 @@ namespace RuiMoraes.Teste.EstoqueAPI.Domains
 {
     public class Produto : BaseEntidade
     {
-        public Produto()
-        {
+        //public Produto()
+        //{
 
-        }
+        //}
 
-        public Produto(int id, string nome, string descricao, decimal preco, int quantidade, int categoriaid, EnumSituacao situacao)
-        {
-            Id = id;
-            Nome = nome;
-            Descricao = descricao;
-            Preco = preco;
-            Quantidade = quantidade;
-            CategoriaId = categoriaid;
-            Situacao = situacao;
+        //public Produto(int id, string nome, string descricao, decimal preco, int quantidade, int categoriaid, EnumSituacao situacao)
+        //{
+        //    Id = id;
+        //    Nome = nome;
+        //    Descricao = descricao;
+        //    Preco = preco;
+        //    Quantidade = quantidade;
+        //    CategoriaId = categoriaid;
+        //    Situacao = situacao;
 
-        }
+        //}
 
         public string Nome { get; set; }
         public string Descricao { get; set; }
